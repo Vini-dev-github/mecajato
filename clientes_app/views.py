@@ -2,4 +2,4 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def clientes(request):
-    return HttpResponse("Hell-o!")
+    return render(request, 'clientes.html')
