@@ -1,9 +1,23 @@
 {% extends 'base.html'%}
 
-<h1>Bem vindo</h1>
+{% load static %}
 
-{% block 'dashboard'%}
+{% block 'head' %}
+<link rel="stylesheet" href="{% static 'clientes/css/clientes.css' %}">
+{% endblock %}
 
-<h1>teste</h1>
+{% block 'dashboard' %}
+<div class="container">
+    <div class="row">
+        <div class="col-md card-dashboard ">
+            <p>Adicionar Cliente</p>
+        </div>
 
+        <div class="col-md card-dashboard">
+            <p>Atualizar Cliente</p>
+        </div>
+
+    </div>
+
+</div>
 {% endblock %}
